@@ -1,0 +1,5 @@
+twig:
+  debug: true
+  strict_variables: false
+  cache: false
+  auto_reload : true

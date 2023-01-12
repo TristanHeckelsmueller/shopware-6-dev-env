@@ -1,0 +1,10 @@
+/files
+/var
+/vendor
+install.lock
+license.txt
+README.md
+composer.lock
+fonts/
+public/theme/*
+public/media/*

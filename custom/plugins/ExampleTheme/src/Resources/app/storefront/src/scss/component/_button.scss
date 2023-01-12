@@ -1,0 +1,13 @@
+.btn {
+
+  &-buy {
+    background: linear-gradient(180deg, #F6C88F 0%, #F0C14B 100%);
+  }
+  &-custom {
+    line-height: 20px;
+    padding: 1rem 2rem;
+    font-size: 20px;
+    font-weight: 400;
+    border-radius: $borderRadius;
+  }
+}

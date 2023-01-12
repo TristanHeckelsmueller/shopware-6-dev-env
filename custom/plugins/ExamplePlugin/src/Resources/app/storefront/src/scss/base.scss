@@ -1,0 +1,73 @@
+@import 'abstract/variables.scss';
+
+
+.saufhampton-intro {
+  width: 100%;
+  & p {
+    margin-bottom: 0;
+  }
+  & h2 {
+    margin-bottom: 0;
+  }
+  &__wrapper {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    width: 100%;
+  }
+  &__tile {
+    max-width: 510px;
+    &__content {
+      margin: 2rem 0;
+    }
+    &__action {
+      display: flex;
+      justify-content: space-between;
+      align-items: flex-end;
+      &__price {
+        font-weight: 500;
+        font-size: 28px;
+        line-height: 34px;
+      }
+    }
+  }
+  &__image {
+    height: 650px;
+    position: relative;
+    & img {
+      height: 100%;
+      margin-right: 5rem;
+      object-fit: contain;
+    }
+    &__conversion {
+      top: 1rem;
+      right: 0;
+      position: absolute;
+      padding: 1rem 2rem;
+      border: 1px solid #FFD700;
+      border-radius: $borderRadius;
+      display: flex;
+      flex-flow: column;
+      gap: 0.5rem;
+      background: linear-gradient(152.97deg, rgba(194, 194, 194, 0.2) 0%, rgba(180, 180, 180, 0) 100%);
+      & p {
+        font-size: 12px;
+      }
+      &__title {
+        font-size: 1rem !important;
+        font-weight: 500;
+      }
+      & .btn {
+        width: 100%;
+        font-size: 12px;
+        padding: 0.5rem 1rem;
+        font-weight: 500;
+      }
+
+    }
+  }
+
+  &-bg {
+    background: linear-gradient(180deg, rgba(233, 55, 55, 0.07) 0%, rgba(255, 255, 255, 0) 100%);
+  }
+}

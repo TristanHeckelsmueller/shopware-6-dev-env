@@ -1,0 +1,19 @@
+.header {
+  &-main {
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.26);
+    &__title {
+      font-size: 1.125rem;
+      margin: 0;
+      font-weight: 700;
+    }
+  }
+  &-row {
+    padding: 1.5rem 0;
+  }
+  &-logo {
+
+  }
+}
+.account-menu {
+  padding-right: 1rem;
+}
