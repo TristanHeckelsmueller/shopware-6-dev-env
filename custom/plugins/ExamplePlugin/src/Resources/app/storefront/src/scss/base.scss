@@ -14,9 +14,29 @@
     justify-content: space-between;
     align-items: center;
     width: 100%;
+    position: relative;
+    @media (max-width: 1024px) {
+
+    }
+    @media (max-width: 767px) {
+      flex-flow: column-reverse;
+
+    }
   }
   &__tile {
     max-width: 510px;
+    @media (max-width: 1024px) {
+      width: 50%;
+    }
+    @media (max-width: 767px) {
+      width: 100%;
+      max-width: 100%;
+      bottom: 0;
+      z-index: 1;
+      padding: 1rem;
+      backdrop-filter: blur(21px);
+      border-radius: $borderRadius;
+    }
     &__content {
       margin: 2rem 0;
     }
@@ -24,6 +44,9 @@
       display: flex;
       justify-content: space-between;
       align-items: flex-end;
+      @media (max-width: 1024px) {
+        flex-flow: column;
+      }
       &__price {
         font-weight: 500;
         font-size: 28px;
@@ -34,10 +57,31 @@
   &__image {
     height: 650px;
     position: relative;
+    @media (max-width: 1024px) {
+      width: 50%;
+    }
+    @media (max-width: 767px) {
+      width: 70%;
+      margin: 0 auto;
+      height: auto;
+    }
+    @media (max-width: 480px) {
+      width: 100%;
+      height: auto;
+    }
     & img {
       height: 100%;
       margin-right: 5rem;
       object-fit: contain;
+      @media (max-width: 767px) {
+        margin: 0;
+      }
+      @media (max-width: 767px) {
+        width: 100%;
+        height: auto;
+        max-height: 350px;
+        object-fit: cover;
+      }
     }
     &__conversion {
       top: 1rem;
@@ -49,12 +93,17 @@
       display: flex;
       flex-flow: column;
       gap: 0.5rem;
-      background: linear-gradient(152.97deg, rgba(194, 194, 194, 0.2) 0%, rgba(180, 180, 180, 0) 100%);
+      background: #333;
+      @media (max-width: 1024px) {
+        display: none;
+      }
       & p {
         font-size: 12px;
+        color: #fff;
       }
       &__title {
         font-size: 1rem !important;
+        color: #fff;
         font-weight: 500;
       }
       & .btn {

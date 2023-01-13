@@ -9,11 +9,25 @@
   }
   &-row {
     padding: 1.5rem 0;
+    @media (max-width: 767px) {
+      padding: 0;
+    }
   }
   &-logo {
 
+    &-col{
+      padding-bottom: 0;
+    }
   }
 }
 .account-menu {
   padding-right: 1rem;
+}
+@media (max-width: 767px) {
+  .header-cart {
+    padding-right: 1rem;
+  }
+  .nav-main-toggle-btn {
+    padding: 0;
+  }
 }
