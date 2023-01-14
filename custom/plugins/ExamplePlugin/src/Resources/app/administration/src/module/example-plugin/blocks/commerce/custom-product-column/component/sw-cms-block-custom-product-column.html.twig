@@ -1,0 +1,8 @@
+<!-- eslint-disable-next-line sw-deprecation-rules/no-twigjs-blocks -->
+{% block sw_cms_block_custom_product_column %}
+<div class="sw-cms-block-custom-product-column">
+    <slot name="left">{% block sw_cms_block_custom_product_column_slot_left %}{% endblock %}</slot>
+    <slot name="center">{% block sw_cms_block_custom_product_column_slot_center %}{% endblock %}</slot>
+    <slot name="right">{% block sw_cms_block_custom_product_column_slot_right %}{% endblock %}</slot>
+</div>
+{% endblock %}

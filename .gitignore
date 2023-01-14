@@ -8,3 +8,6 @@ composer.lock
 fonts/
 public/theme/*
 public/media/*
+
+/platform
+/.idea
